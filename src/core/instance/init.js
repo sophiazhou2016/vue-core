@@ -56,7 +56,7 @@ export function initMixin (Vue: Class<Component>) {
     initRender(vm) // $slots, $createElement
     callHook(vm, 'beforeCreate')
     initInjections(vm) // resolve injections before data/props
-    initState(vm) // 状态初始化: data, props, methods, computed
+    initState(vm) // 状态初始化: data, props, methods, computed, watch
     initProvide(vm) // resolve provide after data/props
     callHook(vm, 'created')
 
